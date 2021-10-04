@@ -4,7 +4,16 @@
 
 export const environment = {
   production: false
+
 };
+
+export const constraints={
+  iceServers: [{
+    urls: 'stun:stun.l.google.com:19302'
+  }]
+
+}
+export const WEB_SOCKET_END="ws://localhost:8080/socket"
 
 /*
  * For easier debugging in development mode, you can import the following file

@@ -1,0 +1,21 @@
+<div class="Landing_PageContainer">
+    <div class="Landing_Page_Video_Container">
+        <video #Local src="" class="Landing_Page_Local_Video" [autoplay]="true" [muted]="true"></video>
+        <video #Remote src="" class="Landing_Page_Remote_Video" [autoplay]="true" [muted]="true"></video>
+    </div>
+    <div class="Landing_Page_Action_Container">
+        <div class="Landing_PageBtn_Container">
+            <button class="Landing_Page_Strat_Btn" (click)="startLocalVideo()">Start</button>
+            <button class="Landing_Page_Pause_Btn" (click)="pauseLocalVideo()">Pause</button>
+            <button class="Landing_Page_Call_Btn"  (click)="call()">Call</button>
+            <button class="Landing_Page_Hang_Up_Btn"  (click)="hangUp()">Hang up</button>
+            <button class="Landing_Page_Hang_Up_Btn"  (click)="hangUp()">Hang up</button>
+        </div>
+    </div>
+    <input #user type="text" >
+    <button class="Landing_Page_Hang_Up_Btn"  (click)="sendToPeer(user.value)">send</button>
+    <input #file type="file" name="" id="" (change)="sendFile($event)">
+    <button class="Landing_Page_Hang_Up_Btn"  >send</button>
+
+
+</div>
