@@ -1,0 +1,41 @@
+.Message_Container{
+    display: flex;
+    flex-flow: column;
+    width: 400px;
+    height: 400px;
+
+    .Message_Wrrapper{
+        display: flex;
+        flex-flow: column;
+        overflow-y: scroll;
+
+    }
+    
+
+}
+
+.sender{
+    display: flex;
+    width: 300px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    background-color: rgba(238, 130, 238, 0.404);
+    border: 1px solid rgb(75, 3, 75); 
+    border-radius: 0 5px 5px 5px;
+    
+}
+
+.received{
+    display: flex;
+    width: 300px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    background-color: rgba(148, 238, 130, 0.404);
+    border: 1px solid rgb(3, 75, 27); 
+    border-radius: 5px 0 5px 5px;
+    
+}

@@ -1,0 +1,8 @@
+<div class="Message_Container">
+    <div class="Message_Wrrapper" *ngIf="messageList.length>0" >
+        <div class="Message_List" *ngFor="let msg of messageList;">
+            <div [ngClass]=msg.type>{{msg.data}}</div>
+
+        </div>
+    </div>
+</div>

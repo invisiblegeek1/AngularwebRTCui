@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { MessagesComponent } from './messages/messages.component';
 
 
 const routes: Routes = [];
@@ -16,7 +17,8 @@ const routes: Routes = [];
   declarations: [
     AppComponent,
     LandingPageComponent,
-    NavbarComponent
+    NavbarComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
