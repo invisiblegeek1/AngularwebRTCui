@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { constraints } from 'src/environments/environment';
+//import { constraints } from 'src/environments/environment';
+import { constraints } from 'src/environments/environment.prod';
 import {Subject} from 'rxjs'
 import { MessagesComponent } from './messages/messages.component';
 import {Message} from './Message';

@@ -218,12 +218,12 @@ export class LandingPageComponent implements OnInit {
     // }
     this.dataChannel.onopen = (event:any)=> {
       this.dataChannel.send('Hi you!');
-      PeerServiceService.messages.next({type:"sender",data:"Hi you!"})
+      //PeerServiceService.messages.next({type:"sender",data:"Hi you!"})
 
     }
     this.dataChannel.onmessage = (event) =>{
       console.log(event.data);
-      PeerServiceService.messages.next({type:"received",data:event.data})
+      //PeerServiceService.messages.next({type:"received",data:event.data})
 
     }
     this.dataChannel.onclose = (event) =>{
@@ -261,7 +261,7 @@ export class LandingPageComponent implements OnInit {
 
         channel.onopen = function(event) {
         channel.send('Hi back!');
-        PeerServiceService.messages.next({type:"sender",data:"Hi back!"})
+       // PeerServiceService.messages.next({type:"sender",data:"Hi back!"})
 
       }
       channel.onmessage = function(event){

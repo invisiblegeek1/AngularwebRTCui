@@ -9,19 +9,13 @@ import { PeerServiceService } from '../peer-service.service';
 })
 export class MessagesComponent implements OnInit {
 
+  public initial=-1;
+
   public messageList:Array<Message>=[{type:"sender",data:"hello"}];
 
   constructor(private peerService:PeerServiceService) {
     //this.getMessageList();
-    PeerServiceService.messageslist.subscribe((msg)=>{
-      console.log(msg);
-
-      // Object.assign(this.messageList,msg);
-      this.messageList.push(msg);
-      
-
-      //this.messageList=[...this.messageList,msg];
-    })
+    
     
    }
 
@@ -31,6 +25,7 @@ export class MessagesComponent implements OnInit {
 
       // Object.assign(this.messageList,msg);
       this.messageList.push(msg);
+      this.initial=this.messageList.length-1;
       
 
       //this.messageList=[...this.messageList,msg];
